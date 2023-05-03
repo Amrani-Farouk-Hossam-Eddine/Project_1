@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#head {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+    url(images/../../images/front.webp); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    padding: 10px 15px;
+}
+nav .fa {
+    font-size: 25px;
+    color: rgb(104, 104, 104);
+}
+nav span p{
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 13px;
+}
+span {
+    color: rgb(104, 104, 104);
+}
+.logo {
+    margin-left: 200px;
+}
+h1 {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-size: 59px;
+}
+.info {
+    padding: 10px 0;
+    position: absolute;
+    color: #fff;
+    top: 39%;
+    left: 8.2%;
+    font-size: 18px;
+}
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 53%;
+    left: 8.2%;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* --------------------------------- MODEL ----------------------------- */
+
+.model {
+    width: 81%;
+    padding: 100px 0;
+    margin: auto;
+    position: relative;
+}
+.model .imm {
+    width: 820px;
+    grid-area: "imm";
+    border-radius: 10px;
+}
+.model .imn{
+    display: block;
+    width:  405px;
+    grid-area: "imn";
+    border-radius: 10px;
+}
+.mod {
+    display: inline-block;
+    grid-area: "span";
+    display: grid;
+    grid-auto-columns: 405px;
+    row-gap: 10px;
+}  
+.model div {
+   display: grid;
+   grid-template-areas: "span span span imm imm imm imm ";
+   row-gap: 100px; 
+   column-gap: 10px;
+}
+h2 {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+/* ----------------------------- universe ---------------------------- */
+
+.universe {
+    width: 81%;
+    padding: 50px 0;
+    margin: auto;
+    position: relative;
+}
+.uni {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 10px;
+}
+.uni img {
+    width: 400px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.uni img:hover {
+    transform: translateY(-10px);
+}
+
+/* -------------------------- news --------------------------------- */
+
+.news {
+    width: 81%;
+    padding: 70px 0;
+    position: relative;
+    margin: auto;
+}
+.titlte {
+    font-size: 12px;
+    color: rgb(98, 98, 98);
+    padding: 18px;
+}
+h3 {
+    font-size: 18px;
+    padding-left: 18px;
+}
+.so {
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+    padding: 50px 18px;
+    position: relative;
+    font-weight: 200;
+}
+.so::after {
+    content: '';
+    width: 45%;
+    height: 1px;
+    background: rgb(98, 98, 98);
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    transition: 0.3s;
+    opacity: 0;
+}
+.so:hover::after {
+    opacity: 1;
+}
+.so span {
+    padding-left: 10px;
+}
+.soe {
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+    padding: 70px 18px;
+    position: relative;
+    font-weight: 200;
+}
+.soe::after {
+    content: '';
+    width: 45%;
+    height: 1px;
+    background: rgb(98, 98, 98);
+    position: absolute;
+    top: 105px;
+    left: 20px;
+    transition: 0.3s;
+    opacity: 0;
+}
+.soe:hover::after {
+    opacity: 1;
+}
+.soe span {
+    padding-left: 10px;
+}
+.bottom {
+    width: 81%;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+    font-weight: 200;
+    margin-left: 30px;
+    margin: auto;
+    padding-left: 550px;
+    padding-bottom: 50px;
+    position: relative;
+    
+}
+.bottom span {
+    margin-left: 10px;
+}
+.fff::before {
+    content: '';
+    width: 22%;
+    height: 1px;
+    background: rgb(98, 98, 98);
+    position: absolute;
+    top: -25px;
+    left: 40%;
+    transition: 0.3s;
+}
+
+/* ----------------------------- social ------------------------------ */
+
+.social {
+    width: 81%;
+    padding: 70px 0;
+    margin: auto;
+    position: relative;
+}
+.soc {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 10px;
+}
+.soc img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.soc span {
+    position: relative;
+}
+.soc span .fa {
+    position: absolute;
+    top: 20px;
+    left: 85%;
+    color: #fff;
+    font-size: 30px;
+    z-index: 5;
+}
+.soc span p {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    color: #fff;
+    font-weight: 500;
+    z-index: 5;
+}
+.soc span .overleye {
+    width: 100%;
+    height: 96.5%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.soc span:hover .overleye {
+    opacity: 1;
+}
+.soc span .overleyee {
+    width: 100%;
+    height: 68.5%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.soc span:hover .overleyee {
+    opacity: 1;
+}
+.soc span .overle {
+    width: 100%;
+    height: 97.5%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.soc span:hover .overle {
+    opacity: 1;
+}
+.soc span .desc {
+    position: absolute;
+    top: 71%;
+    left: 5%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    z-index: 5;
+    opacity: 0;
+}
+.soc span:hover .desc {
+    opacity: 1;
+}
+.soc span .desce {
+    position: absolute;
+    top: 52%;
+    left: 5%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    z-index: 5;
+    opacity: 0;
+}
+.soc span:hover .desce {
+    opacity: 1;
+}
+.soc span .descee {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    z-index: 5;
+    opacity: 0;
+}
+.soc span:hover .descee {
+    opacity: 1;
+}
+.btt {
+    padding-left: 530px;
+    margin-bottom: 200px;
+}
+.bt {
+    padding-left: 590px;
+}
+
+/* ------------------------ footer --------------------- */
+
+.footer {
+    width: 100%;
+    background: #000;
+}
+.foot {
+    margin-top: 50px;
+    margin-left: 45%;
+}
+.foot .fa  {
+    font-size: 25px;
+    color: #fff;
+    padding: 40px 15px;
+    transition: 0.5s;
+}
+.foot .fa:hover {
+    color: rgb(189, 185, 185);
+    transform: translateY(-5px);
+}
+.foo {
+   padding-top: 20px;
+   padding-bottom: 40px;
+   margin-left: 27%;
+}
+.foo a {
+    text-decoration: none;
+    color: rgb(189, 185, 185);
+    font-size: 10px;
+    margin-right: 20px;
+    
+}
+.foo a:hover {
+    border-bottom: 1px solid rgb(189, 185, 185);
+}
+.foo a .fa {
+    font-size: 15px;
+    transition: 1s;
+}
